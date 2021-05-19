@@ -4,6 +4,10 @@ from datetime import date
 from flask_restplus import Api, Resource, fields
 from werkzeug.contrib.fixers import ProxyFix
 
+'''
+Database Integration: MongoDB
+'''
+
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 
 db = client["workspace"]

@@ -5,6 +5,10 @@ from flask import Flask, request
 from werkzeug.contrib.fixers import ProxyFix
 from flask_restplus import Api, Resource, fields
 
+'''
+Adding Authorization
+'''
+
 # Initialising the Database
 client 	= pymongo.MongoClient("mongodb://localhost:27017/")
 db 		= client["workspace"]

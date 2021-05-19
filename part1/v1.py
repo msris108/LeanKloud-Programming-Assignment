@@ -3,9 +3,13 @@ from flask_restplus import Api, Resource, fields
 from werkzeug.contrib.fixers import ProxyFix
 from datetime import date
 
+'''
+Basic version with no database integration
+'''
+
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
-api = Api(app, version='2.0', title='TodoMVC API',
+api = Api(app, version='1.0', title='TodoMVC API',
     description='A simple TodoMVC API',
 )
 
