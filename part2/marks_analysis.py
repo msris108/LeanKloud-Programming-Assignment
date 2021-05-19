@@ -19,7 +19,9 @@ toppers = df.sort_values(by=['Total'], ascending=False).head(3)['Name'].tolist()
 print("Best students in the class are ", tuple(toppers))
 
 '''
-	This script can handle any number of subjects and any number of students even with NA fields.
+	Usage : python marks_analysis <filename>.csv
+	
+	This script can handle any number of subjects.
 
 	Time Complexity Analysis:
 	-------------------------
